@@ -27,6 +27,7 @@ body {
     height: 600px;
     top: 90px;
     left: 50%;
+    transform: translateX(-50%);
     position: absolute;
     flex-direction: column;
     align-items: center;
@@ -192,6 +193,10 @@ body {
     border-radius: 0 12px 12px 0;
     background: rgba(108, 99, 255, 0.08);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.content .tech-stack {
+    display: block;
 }
 
 .contact-card {
@@ -472,6 +477,7 @@ body {
     position: relative;
     top: auto;
     left: auto;
+    transform: none;
     width: 100%;
     height: auto;
     min-height: 0;
@@ -529,6 +535,10 @@ body {
     line-height: 1.5;
     margin-top: 20px;
     padding: 14px 16px;
+  }
+
+  .content .tech-stack {
+    display: block;
   }
 
   .box {
