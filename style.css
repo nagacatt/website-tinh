@@ -5,6 +5,7 @@
 body {
     margin: 0;
     min-height: 100vh;
+  overflow-x: hidden;
     background-color: rgba(0, 0, 0, 0.3);
     background-image: url("assets/background.jpg");
     background-blend-mode: multiply;
@@ -430,4 +431,216 @@ body {
   font-size: 15px;
   font-weight: 600;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 16px 28px;
+    box-sizing: border-box;
+  }
+
+  .horizontal-navigation_bar {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px auto 0;
+    padding: 12px 14px;
+    border-radius: 14px;
+    scale: 1;
+  }
+
+  .horizontal-navigation_bar:hover {
+    scale: 1;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    padding: 6px 2px;
+  }
+
+  .content {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    box-sizing: border-box;
+    margin: 20px auto 0;
+    padding: 28px 20px 24px;
+    border-radius: 20px;
+  }
+
+  .quick-about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Headline,
+  .subheadline,
+  .subcontent {
+    position: static;
+    transform: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .Headline {
+    order: 0;
+    font-size: clamp(24px, 8vw, 32px);
+    line-height: 1.1;
+    margin: 0 0 12px;
+  }
+
+  .subheadline {
+    order: 1;
+    font-size: 16px;
+    line-height: 1.45;
+    margin: 0 0 28px;
+  }
+
+  .subcontent {
+    order: 2;
+    height: auto;
+  }
+
+  .subcontent h1 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+
+  .subcontent p {
+    font-size: 16px !important;
+    line-height: 1.6;
+  }
+
+  .tech-stack {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+    padding: 14px 16px;
+  }
+
+  .box {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin: 20px auto 0;
+    padding: 28px 18px 24px;
+    border-radius: 20px;
+  }
+
+  .avatar {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 0 auto 18px;
+    width: 112px;
+    height: 112px;
+  }
+
+  .Text {
+    position: static;
+    width: 100%;
+    transform: none;
+    line-height: 1.35;
+  }
+
+  .name {
+    font-size: 24px;
+    margin: 0 0 8px;
+  }
+
+  .MSSV,
+  .email {
+    font-size: 15px;
+    margin: 4px 0;
+    overflow-wrap: anywhere;
+  }
+
+  .about-bio,
+  .about-interests {
+    position: static;
+    top: auto;
+    max-width: 100%;
+    margin: 24px auto 0;
+  }
+
+  .about-bio {
+    padding-bottom: 16px;
+  }
+
+  .about-interests {
+    margin-top: 20px;
+  }
+
+  .interests-grid {
+    gap: 10px;
+  }
+
+  .interest-item {
+    flex: 1 1 100%;
+    min-width: 0;
+    padding: 12px 16px;
+  }
+
+  .contact-card,
+  .product-showcase {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 20px auto 0;
+  }
+
+  .contact-card {
+    top: auto;
+    padding: 28px 18px;
+    border-radius: 16px;
+  }
+
+  .contact-header h3 {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .product-showcase {
+    padding: 24px 18px;
+    gap: 24px;
+    border-radius: 16px;
+  }
+
+  .product-title {
+    font-size: clamp(26px, 9vw, 36px);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+
+  .product-desc {
+    line-height: 1.6;
+  }
+
+  .product-info .tech-stack {
+    flex-wrap: wrap;
+    margin-bottom: 22px;
+  }
+
+  .launch-btn {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
 }
