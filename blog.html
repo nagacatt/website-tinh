@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trò chơi | NagaCatt Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap"><a class="brand" href="index.html">NAGACATT<span>.STUDIO</span></a>
+            <nav class="nav-links" aria-label="Điều hướng chính"><a href="index.html">Trang chủ</a><a
+                    href="profile.html">Giới thiệu</a><a href="product.html">Dự án</a><a href="services.html">Sở
+                    thích</a><a href="gallery.html">Bộ sưu tập</a><a class="active" href="blog.html">Trò chơi</a><a
+                    href="contact.html">Liên hệ</a></nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="page-intro">
+            <p class="eyebrow">Mini game</p>
+            <h1>Bắt lấy ngôi sao.</h1>
+            <p class="lead">Nhấn vào ngôi sao màu cam càng nhiều càng tốt trong 20 giây. Chơi trên máy tính hoặc điện thoại đều được.</p>
+        </section>
+
+        <section class="game-card" aria-label="Trò chơi bắt sao">
+            <div class="game-status">
+                <span>Điểm: <strong id="score">0</strong></span>
+                <span>Thời gian: <strong id="time">20</strong>s</span>
+                <button class="button primary" id="start-game" type="button">Bắt đầu</button>
+            </div>
+            <div class="game-board" id="game-board">
+                <p class="game-message" id="game-message">Nhấn “Bắt đầu” để chơi.</p>
+                <button class="star" id="star" type="button" aria-label="Ngôi sao"></button>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-wrap"><span>© 2026 NagaCatt Studio</span><span class="source">Game nhỏ viết bằng HTML, CSS và JavaScript.</span></div>
+    </footer>
+    <script>
+        const board = document.querySelector("#game-board");
+        const star = document.querySelector("#star");
+        const startButton = document.querySelector("#start-game");
+        const scoreText = document.querySelector("#score");
+        const timeText = document.querySelector("#time");
+        const message = document.querySelector("#game-message");
+        let score = 0;
+        let timeLeft = 20;
+        let timer;
+
+        function moveStar() {
+            const maxX = board.clientWidth - star.offsetWidth;
+            const maxY = board.clientHeight - star.offsetHeight;
+            star.style.left = `${Math.max(0, Math.random() * maxX)}px`;
+            star.style.top = `${Math.max(0, Math.random() * maxY)}px`;
+        }
+
+        function finishGame() {
+            clearInterval(timer);
+            star.hidden = true;
+            startButton.disabled = false;
+            message.textContent = `Hết giờ! Bạn đạt ${score} điểm.`;
+        }
+
+        function startGame() {
+            clearInterval(timer);
+            score = 0;
+            timeLeft = 20;
+            scoreText.textContent = score;
+            timeText.textContent = timeLeft;
+            message.textContent = "Bắt lấy ngôi sao!";
+            star.hidden = false;
+            startButton.disabled = true;
+            moveStar();
+            timer = setInterval(() => {
+                timeLeft -= 1;
+                timeText.textContent = timeLeft;
+                if (timeLeft <= 0) finishGame();
+            }, 1000);
+        }
+
+        star.addEventListener("click", () => {
+            if (timeLeft <= 0) return;
+            score += 1;
+            scoreText.textContent = score;
+            moveStar();
+        });
+        startButton.addEventListener("click", startGame);
+    </script>
+</body>
+
+</html>

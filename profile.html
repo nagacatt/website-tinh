@@ -1,70 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Giới thiệu | NagaCatt Studio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
-    <div class="container">
-        <main>
-            <nav class="horizontal-navigation_bar" aria-label="Main navigation">
-                <div class="nav-links">
-                    <a class="active" href="index.html" aria-current="page">Home</a>
-                    <a href="profile.html">About</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="product.html">Product</a>
-                </div>
-            </nav>
-            <div class="box">
-                <div class="avatar">
-                    <img src="assets/avatar.jpg" alt="Avatar" class="avatar-image">
-                </div>
-                <p class="name Text">Lê Nguyễn Kiến Tường</p>
-                <p class="MSSV Text">MSSV: 2531540432</p>
-                <p class="email Text">Email: letuonglnkt@gmail.com</p>
-                <div class="about-bio">
-                    <p>
-                        Hello world! I'm an Information Technology student at Vietnam Aviation Academy, based in Ho Chi
-                        Minh City.
-                        Passionate about coding, visual aesthetics, and creating digital experiences.
-                    </p>
-                </div>
-
-                <div class="about-interests">
-                    <div class="interests-grid">
-                        <div class="interest-item">
-                            <i class="fas fa-camera-retro"></i>
-                            <div class="interest-text">
-                                <span class="label">Hobby</span>
-                                <span class="value">Photography</span>
-                            </div>
-                        </div>
-
-                        <div class="interest-item">
-                            <i class="fas fa-gamepad"></i>
-                            <div class="interest-text">
-                                <span class="label">Gaming</span>
-                                <span class="value">League of Legends</span>
-                            </div>
-                        </div>
-
-                        <div class="interest-item">
-                            <i class="fas fa-headphones-alt"></i>
-                            <div class="interest-text">
-                                <span class="label">Favorite Artist</span>
-                                <span class="value">Natori</span>
-                            </div>
-                        </div>
+    <header class="site-header">
+        <div class="container nav-wrap"><a class="brand" href="index.html">NAGACATT<span>.STUDIO</span></a>
+            <nav class="nav-links" aria-label="Điều hướng chính"><a href="index.html">Trang chủ</a><a class="active"
+                    href="profile.html">Giới thiệu</a><a href="product.html">Dự án</a><a href="services.html">Sở
+                    thích</a><a href="gallery.html">Bộ sưu tập</a><a href="blog.html">Trò chơi</a><a href="contact.html">Liên
+                    hệ</a></nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="page-intro">
+            <p class="eyebrow">About me</p>
+            <h1>Một chút về mình.</h1>
+            <p class="lead">Tập trung vào việc học, thực hành và tạo ra những sản phẩm có giá trị.</p>
+        </section>
+        <section class="profile-layout">
+            <aside class="profile-card"><img class="avatar" src="assets/avatar.jpg" alt="Lê Nguyễn Kiến Tường">
+                <h2>Lê Nguyễn Kiến Tường</h2>
+                <p class="gradient-text">Information Technology Student</p>
+                <dl class="detail-list">
+                    <div>
+                        <dt>MSSV</dt>
+                        <dd>2531540432</dd>
                     </div>
-                </div>
-        </main>
-
-    </div>
+                    <div>
+                        <dt>Email</dt>
+                        <dd>letuonglnkt@gmail.com</dd>
+                    </div>
+                    <div>
+                        <dt>Địa điểm</dt>
+                        <dd>Ho Chi Minh City, VN</dd>
+                    </div>
+                </dl>
+            </aside>
+            <div class="timeline">
+                <article class="card">
+                    <p class="eyebrow">Hiện tại</p>
+                    <h3>Học tập & xây dựng</h3>
+                    <p>Mình đang theo học ngành Công nghệ Thông tin tại Học viện Hàng không Việt Nam, luôn khám phá
+                        những ý tưởng mới và rèn luyện tư duy sáng tạo.</p>
+                    <ul class="tag-list">
+                        <li class="tag">HTML5</li>
+                        <li class="tag">CSS3</li>
+                        <li class="tag">JavaScript</li>
+                        <li class="tag">Git</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <p class="eyebrow">Ngoài màn hình</p>
+                    <h3>Nhiếp ảnh · Game · Âm nhạc</h3>
+                    <p>Mỗi sở thích là một cách quan sát thế giới: nhiếp ảnh rèn con mắt, game rèn tư duy, còn âm nhạc
+                        giữ cảm hứng luôn mới.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-wrap"><span>© 2026 NagaCatt Studio</span><a href="contact.html">Cùng trò chuyện
+                →</a></div>
+    </footer>
 </body>
 
 </html>

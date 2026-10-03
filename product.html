@@ -1,50 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Profile</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dự án | NagaCatt Studio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<div class="container">
-		<main>
-			<nav class="horizontal-navigation_bar" aria-label="Main navigation">
-				<div class="nav-links">
-					<a class="active" href="index.html" aria-current="page">Home</a>
-					<a href="profile.html">About</a>
-					<a href="contact.html">Contact</a>
-					<a href="product.html">Product</a>
-				</div>
-			</nav>
-			<div class="product-showcase">
-				<div class="product-info">
-					<span class="system-tag">// FEATURED DEPLOYMENT</span>
-					<h2 class="product-title">NagaTruyen.me</h2>
-					<p class="product-desc">
-						A digital platform designed for seamless reading experiences.
-						Built with a focus on clean UI/UX, fast loading, and responsive design across all devices.
-					</p>
-
-					<div class="tech-stack">
-						<span class="tech-tag">Web Development</span>
-						<span class="tech-tag">UI/UX Design</span>
-					</div>
-
-					<a href="https://nagatruyen.me" target="_blank" class="launch-btn">
-						<i class="fas fa-external-link-alt"></i> LAUNCH PROJECT
-					</a>
-				</div>
-
-				<div class="product-visual">
-					<img src="link-anh-chup-man-hinh-nagatruyen.jpg" alt="NagaTruyen Interface">
-				</div>
-			</div>
-		</main>
-
-	</div>
+    <header class="site-header">
+        <div class="container nav-wrap"><a class="brand" href="index.html">NAGACATT<span>.STUDIO</span></a>
+            <nav class="nav-links" aria-label="Điều hướng chính"><a href="index.html">Trang chủ</a><a
+                    href="profile.html">Giới thiệu</a><a class="active" href="product.html">Dự án</a><a
+                    href="services.html">Sở thích</a><a href="gallery.html">Bộ sưu tập</a><a href="blog.html">Trò chơi</a><a
+                    href="contact.html">Liên hệ</a></nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="page-intro">
+            <p class="eyebrow">Selected work</p>
+            <h1>Những dự án mình đã làm.</h1>
+            <p class="lead">Một số bài tập và sản phẩm cá nhân thể hiện cách mình giải quyết vấn đề bằng thiết kế và
+                code.</p>
+        </section>
+        <section class="grid">
+            <article class="card project-card">
+                <p class="project-label">01 / Featured</p>
+                <h2>NagaTruyen.me</h2>
+                <p>Nền tảng đọc truyện với giao diện tối giản, ưu tiên tốc độ tải và trải nghiệm đọc thoải mái.</p>
+                <ul class="tag-list">
+                    <li class="tag">UI/UX</li>
+                    <li class="tag">Web design</li>
+                    <li class="tag">Responsive</li>
+                </ul><a class="button primary" href="https://nagatruyen.me" target="_blank" rel="noreferrer">Xem sản
+                    phẩm ↗</a>
+            </article>
+            <article class="card project-card">
+                <p class="project-label">02 / Coursework</p>
+                <h2>Student Profile</h2>
+                <p>Trang hồ sơ cá nhân responsive, xây dựng bằng HTML semantic và CSS thuần.</p>
+                <ul class="tag-list">
+                    <li class="tag">HTML5</li>
+                    <li class="tag">CSS3</li>
+                    <li class="tag">GitHub Pages</li>
+                </ul><a class="button secondary" href="profile.html">Xem chi tiết</a>
+            </article>
+            <article class="card project-card">
+                <p class="project-label">03 / Concept</p>
+                <h2>Travel Notes</h2>
+                <p>Concept nhật ký du lịch tập trung vào hình ảnh, khoảng trắng và hệ thống card dễ mở rộng.</p>
+                <ul class="tag-list">
+                    <li class="tag">Prototype</li>
+                    <li class="tag">Visual design</li>
+                </ul><a class="button secondary" href="gallery.html">Khám phá cảm hứng</a>
+            </article>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-wrap"><span>© 2026 NagaCatt Studio</span><span class="source">Nội dung dự án do tác
+                giả thực hiện.</span></div>
+    </footer>
 </body>
 
 </html>

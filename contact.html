@@ -1,49 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Profile</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Liên hệ | NagaCatt Studio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<div class="container">
-		<main>
-			<nav class="horizontal-navigation_bar" aria-label="Main navigation">
-				<div class="nav-links">
-					<a class="active" href="index.html" aria-current="page">Home</a>
-					<a href="profile.html">About</a>
-					<a href="contact.html">Contact</a>
-					<a href="product.html">Product</a>
-				</div>
-			</nav>
-
-			<div class="contact-card">
-				<div class="contact-header">
-					<h3>// SIGNAL ESTABLISHED</h3>
-					<p>Let's connect and build something awesome.</p>
-				</div>
-
-				<div class="social-links">
-					<a href="https://www.facebook.com/wall.lmao" target="_blank" class="social-btn facebook">
-						<i class="fab fa-facebook-f"></i>
-						<span>Facebook</span>
-					</a>
-					<a href="https://discord.com/nagacatt" target="_blank" class="social-btn discord">
-						<i class="fab fa-discord"></i>
-						<span>Discord</span>
-					</a>
-					<a href="https://github.com/Nichiniha" target="_blank" class="social-btn github">
-						<i class="fab fa-github"></i>
-						<span>GitHub</span>
-					</a>
-				</div>
-			</div>
-		</main>
-
-	</div>
+    <header class="site-header">
+        <div class="container nav-wrap"><a class="brand" href="index.html">NAGACATT<span>.STUDIO</span></a>
+            <nav class="nav-links" aria-label="Điều hướng chính"><a href="index.html">Trang chủ</a><a
+                    href="profile.html">Giới thiệu</a><a href="product.html">Dự án</a><a href="services.html">Sở
+                    thích</a><a href="gallery.html">Bộ sưu tập</a><a href="blog.html">Trò chơi</a><a class="active"
+                    href="contact.html">Liên hệ</a></nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="page-intro">
+            <p class="eyebrow">Get in touch</p>
+            <h1>Cùng tạo điều gì đó thật tốt.</h1>
+            <p class="lead">Bạn có ý tưởng, một câu hỏi hoặc chỉ muốn làm quen? Hãy gửi lời nhắn cho mình.</p>
+        </section>
+        <section class="contact-layout">
+            <div class="card">
+                <p class="eyebrow">Thông tin kết nối</p>
+                <h2>Let's talk.</h2>
+                <p>Mình luôn sẵn sàng lắng nghe những dự án thú vị và cơ hội học hỏi mới.</p>
+                <dl class="detail-list">
+                    <div>
+                        <dt>Email</dt>
+                        <dd><a href="mailto:letuonglnkt@gmail.com">letuonglnkt@gmail.com</a></dd>
+                    </div>
+                    <div>
+                        <dt>GitHub</dt>
+                        <dd><a href="https://github.com/nagacatt" target="_blank"
+                                rel="noreferrer">github.com/nagacatt</a></dd>
+                    </div>
+                    <div>
+                        <dt>Facebook</dt>
+                        <dd><a href="https://www.facebook.com/wall.lmao" target="_blank" rel="noreferrer">Lê Nguyễn Kiến
+                                Tường</a></dd>
+                    </div>
+                </dl>
+            </div>
+            <form class="contact-form" action="mailto:letuonglnkt@gmail.com" method="post" enctype="text/plain">
+                <div class="form-grid"><label>Họ và tên<input name="name" required
+                            placeholder="Nguyễn Văn A"></label><label>Email<input type="email" name="email" required
+                            placeholder="you@example.com"></label><label class="full">Nội dung<textarea name="message"
+                            required placeholder="Hãy kể mình nghe về ý tưởng của bạn..."></textarea></label><button
+                        class="button primary" type="submit">Gửi lời nhắn</button></div>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-wrap"><span>© 2026 NagaCatt Studio</span><span class="source">Phản hồi trong thời
+                gian sớm nhất.</span></div>
+    </footer>
 </body>
 
 </html>
